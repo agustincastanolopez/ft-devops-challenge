@@ -1,0 +1,14 @@
+variable "environment" {
+  description = "Deployment environment (staging, production)"
+  type        = string
+}
+
+variable "vpc_id" {
+  description = "VPC ID where ElastiCache is deployed"
+  type        = string
+}
+
+variable "subnet_ids" {
+  description = "Subnet IDs for the ElastiCache subnet group"
+  type        = list(string)
+}
